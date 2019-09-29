@@ -1,0 +1,20 @@
+{
+  "name": "package-firewall",
+  "version": "1.0.0",
+  "description": "An experimental package network access control tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'go to test-manual and try it' && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naugtur/package-firewall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naugtur/package-firewall/issues"
+  },
+  "homepage": "https://github.com/naugtur/package-firewall#readme"
+}
