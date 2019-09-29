@@ -2,13 +2,26 @@
 
 An experimental package network access control tool
 
+# It's an experiment. Do not rely on it. Not fit to run in production.
+
+Now with all the disclaimers done, let's get into it.
+
+## idea
+
+package-firewall reviews all stack traces leading to requiring a `net` module in your entire codebase (including dependencies) in runtime. `net` is the internal module that's behind all socket/http etc. communication in Node.js. It only lets the ones you allowed through. 
+
+It means whenever you (or a malicious package) require anything that could make an outbound request, it must be verified.
+
+The aim is for it to be simple to use, so you record a running application and review results. All configuration is generated for you to edit/tweak.
+
+I'll remove the disclaimer once there's a reason to believe it really works well enough.
 
 ## usage
 
 ### prepare
 
 ```
-npm i -D package-firewall
+npm install package-firewall
 ```
 
 ```

@@ -10,9 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/naugtur/package-firewall.git"
   },
+  "files": [
+    "*.js",
+    "src"
+  ],
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/naugtur/package-firewall/issues"
   },
