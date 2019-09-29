@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/naugtur/package-firewall/issues"
   },
-  "homepage": "https://github.com/naugtur/package-firewall#readme"
+  "homepage": "https://github.com/naugtur/package-firewall#readme",
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
 }

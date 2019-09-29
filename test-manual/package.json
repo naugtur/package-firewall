@@ -16,5 +16,10 @@
     "got": "^9.6.0",
     "request": "^2.88.0",
     "septa": "^0.2.0"
-  }
+  },
+  "packageFirewallSignatures": [
+    "c151892b292ca33d9574abce93c4a877e1010b96",
+    "90fa033b64b4199d8ef96bf814745603f46edba4",
+    "d8b4c8ba9422a884e9214499f98c9da7798fde8d"
+  ]
 }

@@ -1,7 +1,7 @@
 const Module = require('module')
 const fs = require('fs')
-const pkg = require('./package.json')
-const { produceSignature } = require('./src/core')
+const pkg = JSON.parse(fs.readFileSync('./package.json'))
+const { capture } = require('./src/core')
 
 const signatureList = {}
 let pending = false
@@ -9,21 +9,16 @@ setInterval(() => {
   if (pending) {
     fs.writeFileSync('./packageFirewallRecording.json', JSON.stringify(signatureList, null, 2))
     pkg.packageFirewallSignatures = Object.keys(signatureList)
-    // fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2))
+    fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2))
     pending = false
   }
-})
+}, 1000)
 let localCache
 Object.defineProperty(Module._cache, 'net', {
   configurable: false,
   get() {
-    const e = {}
-    const originalLimit = Error.stackTraceLimit
-    Error.stackTraceLimit = Infinity
-    Error.captureStackTrace(e)
-    Error.stackTraceLimit = originalLimit
-    const signature = produceSignature(e.stack)
-    signatureList[signature] = e.stack
+    const {cleanStack, signature } = capture()
+    signatureList[signature] = cleanStack
     pending = true
     return localCache
   },
