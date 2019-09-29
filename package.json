@@ -4,7 +4,7 @@
   "description": "An experimental package network access control tool",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'go to test-manual and try it' && exit 1"
+    "test": "echo 'no tests yet, but go to test-manual and try it' && exit 1"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,29 @@
+{
+  "c151892b292ca33d9574abce93c4a877e1010b96": [
+    "(/node_modules/tough-cookie/lib/cookie.js:32:11)",
+    "(/node_modules/request/lib/cookies.js:3:13)",
+    "(/node_modules/request/index.js:18:15)",
+    "(/nets.js:2:15)"
+  ],
+  "90fa033b64b4199d8ef96bf814745603f46edba4": [
+    "(/node_modules/forever-agent/index.js:6:11)",
+    "(/node_modules/request/request.js:14:20)",
+    "(/node_modules/request/index.js:143:19)",
+    "(/nets.js:2:15)"
+  ],
+  "62b9419d7735e8e69e14ec61caf03b07b24af5fc": [
+    "(/node_modules/tunnel-agent/index.js:3:11)",
+    "(/node_modules/request/lib/tunnel.js:4:14)",
+    "(/node_modules/request/request.js:29:14)",
+    "(/node_modules/request/index.js:143:19)",
+    "(/nets.js:2:15)"
+  ],
+  "d8b4c8ba9422a884e9214499f98c9da7798fde8d": [
+    "(/node_modules/got/source/utils/timed-out.js:2:13)",
+    "(/node_modules/got/source/request-as-event-emitter.js:12:18)",
+    "(/node_modules/got/source/as-stream.js:4:31)",
+    "(/node_modules/got/source/create.js:3:18)",
+    "(/node_modules/got/source/index.js:3:16)",
+    "(/nets.js:3:11)"
+  ]
+}

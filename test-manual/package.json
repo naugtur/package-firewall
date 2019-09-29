@@ -6,6 +6,7 @@
   "main": "nets.js",
   "scripts": {
     "test": "node --require ../index.js nets.js",
+    "warn": "node --require ../warn.js nets.js",
     "record": "node --require ../record.js nets.js"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
   "packageFirewallSignatures": [
     "c151892b292ca33d9574abce93c4a877e1010b96",
     "90fa033b64b4199d8ef96bf814745603f46edba4",
+    "62b9419d7735e8e69e14ec61caf03b07b24af5fc",
     "d8b4c8ba9422a884e9214499f98c9da7798fde8d"
   ]
 }

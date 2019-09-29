@@ -7,10 +7,11 @@ const signatureList = {}
 let pending = false
 setInterval(() => {
   if (pending) {
-    fs.writeFileSync('./packageFirewallRecording.json', JSON.stringify(signatureList, null, 2))
+    fs.writeFileSync('./packageFirewallSignatureReference.json', JSON.stringify(signatureList, null, 2))
     pkg.packageFirewallSignatures = Object.keys(signatureList)
     fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2))
     pending = false
+    console.error('Network access recorded, signatures updated')
   }
 }, 1000)
 let localCache
